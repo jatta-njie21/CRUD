@@ -1,5 +1,4 @@
-from Connection import SqliteConnection
-
+from Backend import Connection
 class MainCrud:
     Connection.SqliteConnection("crud")
     
