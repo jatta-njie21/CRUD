@@ -1,12 +1,12 @@
-from Backend import Connection
+from Backend import Connection, Update, Create
 class MainCrud:
     Connection.SqliteConnection("crud")
     
     def UpdateRecord():
-        pass
+        Update.Update('lamin','jatta','jatta-njie21')
     
     def AddRecord():
-        pass
+        Create.Create('TableName?')
     
     def DeleteRecord():
         pass
