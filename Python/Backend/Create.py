@@ -1,4 +1,4 @@
-from .Connection import *
+from Backemd.Connection import SqliteConnection
 
 class Create:
     def __init__(self,y):
@@ -6,5 +6,6 @@ class Create:
        
 
     def Create(tableName):
-        # cur.execute("create table ? if not exists()")
-        pass
+        SqliteConnection.establishConnection("test")
+        
+Create()

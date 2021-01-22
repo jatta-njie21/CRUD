@@ -5,9 +5,10 @@ class SqliteConnection:
         self.name = name
         
     def establishConnection(dbName):
-        conn = sqlite3.connect(dbName,".db")
+        dbName = dbName +".db"
+        conn = sqlite3.connect(dbName)
         cur = conn.cursor()
-        cur.execute("create table if not exist crud(name text,surname text,username text,password text)")
+        # cur.execute("create table if not exist (name text,surname text,username text,password text)")
         conn.commit()
         conn.close()
 

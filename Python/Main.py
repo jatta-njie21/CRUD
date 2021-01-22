@@ -6,7 +6,7 @@ class MainCrud:
         Update.Update('lamin','jatta','jatta-njie21')
     
     def AddRecord():
-        Create.Create('TableName?')
+        
     
     def DeleteRecord():
         pass
